@@ -21,45 +21,45 @@
 
 [data-theme="dark"] {
     /* Dark Theme Colors */
-    --bg-color: #0f172a;
-    --mesh-color-1: #1e1b4b;
-    --mesh-color-2: #082f49;
-    --card-bg: rgba(30, 41, 59, 0.65);
-    --card-border: rgba(255, 255, 255, 0.1);
-    --text-primary: #f8fafc;
-    --text-secondary: #cbd5e1;
-    --accent-color: #38bdf8;
-    --accent-hover: #7dd3fc;
-    --input-bg: rgba(15, 23, 42, 0.6);
-    --input-focus-ring: rgba(56, 189, 248, 0.3);
-    --detail-bg: rgba(15, 23, 42, 0.5);
-    --error-bg: rgba(239, 68, 68, 0.2);
-    --error-text: #fca5a5;
+    --bg-color: #050511;
+    --mesh-color-1: #1a0033;
+    --mesh-color-2: #001f3f;
+    --card-bg: rgba(20, 20, 30, 0.65);
+    --card-border: rgba(0, 240, 255, 0.3);
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --accent-color: #00f0ff;
+    --accent-hover: #00c0cc;
+    --input-bg: rgba(10, 10, 20, 0.6);
+    --input-focus-ring: rgba(0, 240, 255, 0.3);
+    --detail-bg: rgba(10, 10, 20, 0.5);
+    --error-bg: rgba(255, 0, 60, 0.2);
+    --error-text: #ff003c;
 }
 
 /* =========================================
    Dynamic Weather Backgrounds & Accents
    ========================================= */
 body[data-weather="sunny"], body[data-weather="clear"] {
-    background-color: #1a0f08;
-    --accent-color: #f59e0b;
-    --accent-hover: #d97706;
-    --input-focus-ring: rgba(245, 158, 11, 0.3);
+    background-color: #0a0505;
+    --accent-color: #ff003c;
+    --accent-hover: #cc0030;
+    --input-focus-ring: rgba(255, 0, 60, 0.3);
 }
 body[data-weather="sunny"] .background-mesh, body[data-weather="clear"] .background-mesh {
-    background: radial-gradient(at 20% 30%, #9a3412 0px, transparent 50%),
-                radial-gradient(at 80% 70%, #b45309 0px, transparent 50%);
+    background: radial-gradient(at 20% 30%, #500010 0px, transparent 50%),
+                radial-gradient(at 80% 70%, #ff00ff 0px, transparent 50%);
 }
 
 body[data-weather="rainy"] {
-    background-color: #0b0f19;
-    --accent-color: #64748b;
-    --accent-hover: #475569;
-    --input-focus-ring: rgba(100, 116, 139, 0.3);
+    background-color: #000810;
+    --accent-color: #00f0ff;
+    --accent-hover: #00c0cc;
+    --input-focus-ring: rgba(0, 240, 255, 0.3);
 }
 body[data-weather="rainy"] .background-mesh {
-    background: radial-gradient(at 20% 30%, #334155 0px, transparent 50%),
-                radial-gradient(at 80% 70%, #1e293b 0px, transparent 50%);
+    background: radial-gradient(at 20% 30%, #003355 0px, transparent 50%),
+                radial-gradient(at 80% 70%, #110033 0px, transparent 50%);
 }
 
 body[data-weather="cloudy"], body[data-weather="partly-cloudy"] {
@@ -118,7 +118,7 @@ body {
     left: -10%;
     width: 40vw;
     height: 40vw;
-    background: linear-gradient(135deg, #6366f1, #3b82f6);
+    background: linear-gradient(135deg, #ff003c, #00f0ff);
 }
 
 .blob-2 {
@@ -126,7 +126,7 @@ body {
     right: -10%;
     width: 35vw;
     height: 35vw;
-    background: linear-gradient(135deg, #ec4899, #8b5cf6);
+    background: linear-gradient(135deg, #ff00ff, #7000ff);
     animation-delay: -5s;
 }
 
@@ -500,12 +500,12 @@ body {
 
 @keyframes glowPulse {
     0% {
-        border-color: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.02);
+        border-color: rgba(0, 240, 255, 0.3);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 240, 255, 0.1);
     }
     100% {
-        border-color: rgba(255, 255, 255, 0.4);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.15), inset 0 0 15px rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 0, 255, 0.5);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 0, 255, 0.2), inset 0 0 15px rgba(0, 240, 255, 0.1);
     }
 }
 
